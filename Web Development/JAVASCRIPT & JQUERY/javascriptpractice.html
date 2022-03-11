@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function just(){
+            alert('just function calling');
+        }
+        function just1(){
+            confirm('just function calling for confirm');
+        }
+        function just2(){
+            var fName=prompt("Enter Firstname Here..");
+			var lName=prompt("Enter Lastname Here..");
+			alert(fName+" "+lName);
+        }
+    </script>
+    <script src="demo.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="d1">
+        hiiii 
+    </div> <br><br>
+    <input type="button" value="alert" onclick="alert('my name is viren')" >
+    <input type="button" value="confirm"  onclick="confirm('Are you sure?')" >
+    <input type="button" value="prompt"  onclick="prompt('enter your name here')" > <br><br>
+
+
+    <input type="button" value="internal alert" onclick="just()">
+    <input type="button" value="internal confirm" onclick="just1()">
+    <input type="button" value="internal prompt" onclick="just2()"> <br><br>
+
+    <input type="button" value="External alert" onclick="external1()">
+    <input type="button" value="External alert" onclick="external2()">
+    <input type="button" value="External alert" onclick="external3()"> <br><br>
+
+    <input type="button" value="background green" id="d1" onclick="background()">
+    <input type="button" value="div bg gray" id="d2" onclick="divbackground()"> <br><br>
+
+    <input type="button" value="div Bg Prompt" id="c1" onclick="divbackgrounddynamic()" />
+	<input type="button" value="body Bg Prompt" id="c2" onclick="bodybackgrounddynamic()" /> <br><br>
+
+    <input type="color" id="e1" onchange="fromcolorpicker1()" />
+	<input type="color" id="e2" onchange="fromcolorpicker2()" />
+</body>
+</html>
